@@ -30,3 +30,7 @@ class ArticleSerializer(serializers.Serializer):
         instance.active = validated_data.get("active", instance.active)
         instance.save()
         return instance
+
+    # class Meta:
+    #     model = Article
+    #     fields = "__all__"
